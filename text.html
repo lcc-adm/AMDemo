@@ -5,20 +5,33 @@
   <head>
     <meta charset="utf-8" />
     <title>text demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
     <style>
-        html {
-            background: #CED46A;
-            color: #07553B;
-        }
+      html {
+        background: #ced46a;
+        color: #07553b;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; 
+      }
 
-        h1 {
-            color: #cd14a1;
-            text-align: center;
-            letter-spacing: 10px;
-            word-spacing: 20px;
-        }
+      h1 {
+        color: #cd14a1;
+        text-align: center;
+        letter-spacing: 10px;
+        word-spacing: 20px;
+        font-family: 'Amatic SC', cursive;
+      }
 
-        mark {background-color: #cd14a1;}
+      .bob {
+        color:aquamarine;
+      }
+
+      #blue {color:blue;}
+
+      mark {
+        background-color: #cd14a1;
+      }
     </style>
   </head>
 
@@ -29,13 +42,13 @@
 
     <p><a href="https://markiplier.com/">mark's site</a></p>
 
-    <h1>mark highlight is <em>NOT</em> named after <mark>markiplier</mark></h1>
+    <h1>mark highlight is <span class="bob"><em>NOT</em></span> named after <mark>markiplier</mark></h1>
 
     <!--
 <h2>this is a smaller h2 sub-headline</h2>
 -->
 
-    <p>
+    <p id="blue">
       this is <em>plain <strong>old</strong></em> paragraph body text. this is
       plain old paragraph body text. this is plain old paragraph body text. this
       is plain old paragraph body text.
@@ -61,6 +74,6 @@
 
     <blockquote>this is a blockquote</blockquote>
 
-    <code>this is code and stuff.</code>
+    <code>this is code.</code>
   </body>
 </html>
